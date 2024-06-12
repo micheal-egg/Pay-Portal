@@ -1,0 +1,32 @@
+pipeline {
+  agent any
+
+  stages {
+    stage('Checkout') {
+      steps { checkout scm }
+    }
+
+    stage('Install') {
+      steps {
+        dir('pay-portal-frontend') {
+          bat 'npm ci'
+        }
+      }
+    }
+
+    stage('Test') {
+      steps {
+        dir('pay-portal-frontend') {
+          bat 'npm run test:ci'
+        }
+      }
+      post {
+        always {
+          dir('pay-portal-frontend') {
+            junit 'reports/junit.xml'
+          }
+        }
+      }
+    }
+  }
+}
