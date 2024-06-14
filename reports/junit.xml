@@ -1,3 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites name="vitest tests" tests="0" failures="0" errors="0" time="0">
+<testsuites name="vitest tests" tests="1" failures="0" errors="0" time="0.0016064">
+    <testsuite name="src/__tests__/smoke.test.ts" timestamp="2025-12-16T00:33:45.149Z" hostname="EggbowlHP" tests="1" failures="0" errors="0" skipped="0" time="0.0016064">
+        <testcase classname="src/__tests__/smoke.test.ts" name="CI smoke test &gt; should pass CI" time="0.0007758">
+        </testcase>
+    </testsuite>
 </testsuites>

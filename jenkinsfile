@@ -22,9 +22,7 @@ pipeline {
       }
       post {
         always {
-          dir('pay-portal-frontend') {
-            junit 'reports/junit.xml'
-          }
+          junit 'reports/junit.xml'
         }
       }
     }
