@@ -20,7 +20,6 @@ const payStubs: PayStub[] = [
   { period: 'Sep 1 – Sep 14, 2023', hours: '80', gross: '$4,000.00', net: '$3,600.00', datePaid: 'Sep 21, 2023' },
   { period: 'Aug 15 – Aug 28, 2023', hours: '79', gross: '$3,950.00', net: '$3,555.00', datePaid: 'Sep 4, 2023' },
   { period: 'Aug 1 – Aug 14, 2023', hours: '82', gross: '$4,100.00', net: '$3,680.00', datePaid: 'Aug 21, 2023' },
-  { period: 'Jul 15 – Jul 28, 2023', hours: '78', gross: '$3,900.00', net: '$3,520.00', datePaid: 'Aug 4, 2023' },
   { period: 'Jul 1 – Jul 14, 2023', hours: '80', gross: '$4,000.00', net: '$3,600.00', datePaid: 'Jul 21, 2023' },
   { period: 'Jun 15 – Jun 28, 2023', hours: '81', gross: '$4,050.00', net: '$3,640.00', datePaid: 'Jul 5, 2023' },
   { period: 'Jun 1 – Jun 14, 2023', hours: '80', gross: '$4,000.00', net: '$3,600.00', datePaid: 'Jun 21, 2023' },
@@ -104,7 +103,7 @@ function Dashboard() {
         {/* Pay Stubs */}
         <div className="stubs">
           <h1>Pay Stubs</h1>
-          <h2>Showing last 6 paychecks (≈ last 3 months)</h2>
+          <h2>Showing last 6 paychecks </h2>
 
           <table className="paystub-table">
             <thead>
