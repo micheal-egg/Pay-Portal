@@ -26,23 +26,26 @@ nav {
     font-size: 5rem;
     font-weight: 600;
     padding-bottom: 1rem;
+    color: rgb(0, 0, 0);
 }
 
 .top h2{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     padding-bottom: 0.5rem;
+    color: rgba(77, 89, 101, 0.741);
 }
 
 .top p{
-    font-size: 1.1rem;
-    font-weight: 300;
+    font-size: 1.2rem;
+    font-weight: 400;
     text-align: center;
     max-width: 600px;
+    color: rgba(112, 128, 144, 0.741);
 }
 
 .profile{
-    background-color: #fbf9f9e4;
+    background-color: #f9f9fd;
     width: 50%;
     display: flex;
     align-items: center;
@@ -51,12 +54,53 @@ nav {
     border-radius: 15px;
     margin-top: 10vh;
     padding-top: 5vh;
+    padding-bottom: 5vh;
 }
+
 .profile h2{
     font-size: 1.5rem;
     font-weight: 500;
-    padding-bottom: 1rem;
+
 }
+
+.Employeedetails{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 2vh;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.field select {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 5px 4px;
+  font-size: 1rem;
+  color: #000;
+
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+.field select:hover {
+  border-color: #bbb;
+}
+
+.field select:focus {
+  border-color: #000;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.15);
+}
+
 
 h3{
     font-size: 0.8rem;
@@ -68,10 +112,14 @@ h3{
     background-color: #c0c1d1;
     color: white;
     border: none;
-    border-radius: 15px;
-    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+    padding: 20px 20px 20px 20px;
     font-size: 1rem;
     font-weight: 500;
     margin-top: 2rem;
     cursor: pointer;
 }   
+
+.top{
+    background-color: rgb(255, 255, 255);
+}
